@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16002ead-74ca-43f5-b83e-be40b8d9b2ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lang.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Lang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Scanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/TokenType.java" afterDir="false" />
+    <list default="true" id="16002ead-74ca-43f5-b83e-be40b8d9b2ae" name="Changes" comment="This class will house all other expressions.&#10;&#10;Makes use of the visitor pattern, better explained in the book.">
+      <change afterPath="$PROJECT_DIR$/NOTES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/AstPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nangosha/tools/GenerateAst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +20,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -49,10 +43,37 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "copyright.filetypes.JAVA"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Lang">
+  <component name="RunManager" selected="Application.AstPrinter">
+    <configuration name="AstPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nangosha.lang.AstPrinter" />
+      <module name="Lang" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nangosha.lang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenerateAst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nangosha.lang.GenerateAst" />
+      <module name="Lang" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nangosha.lang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Lang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nangosha.lang.Lang" />
       <module name="Lang" />
@@ -79,8 +100,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.nangosha.tools.GenerateAst" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nangosha.tools.GenerateAst" />
+      <module name="Lang" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nangosha.tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AstPrinter" />
+        <item itemvalue="Application.com.nangosha.tools.GenerateAst" />
+        <item itemvalue="Application.GenerateAst" />
         <item itemvalue="Application.Lang" />
         <item itemvalue="Application.Scanner" />
       </list>
@@ -95,6 +132,30 @@
       <option name="presentableId" value="Default" />
       <updated>1679042553815</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit. Created the Token and Scanner classes.&#10;&#10;Defined the regular grammar that forms part of the front end of our language. We can now run files and also do simple prompt-based instructions.">
+      <created>1679064970248</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679064970248</updated>
+    </task>
+    <task id="LOCAL-00002" summary="This class will house all other expressions.&#10;&#10;Makes use of the visitor pattern, better explained in the book.">
+      <created>1679137806757</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679137806757</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit. Created the Token and Scanner classes.&#10;&#10;Defined the regular grammar that forms part of the front end of our language. We can now run files and also do simple prompt-based instructions." />
+    <MESSAGE value="This class will house all other expressions.&#10;&#10;Makes use of the visitor pattern, better explained in the book." />
+    <option name="LAST_COMMIT_MESSAGE" value="This class will house all other expressions.&#10;&#10;Makes use of the visitor pattern, better explained in the book." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
