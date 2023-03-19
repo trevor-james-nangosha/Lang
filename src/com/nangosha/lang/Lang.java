@@ -10,7 +10,10 @@ import java.util.List;
 
 // this is the whole implementation of the whole language in a single file.
 public class Lang {
+    private static final Interpreter interpreter = new Interpreter();
     private static boolean hadError = false;
+    private  static boolean hadRuntimeError = false;
+
     public static void main(String[] args) throws IOException {
         if(args.length > 1){
             System.out.println("Usage: Jlox [script]");
@@ -28,6 +31,7 @@ public class Lang {
 
         // Indicate an error in the exit code.
         if (hadError) System.exit(65);
+        if (hadRuntimeError) System.exit(70);
     }
 
     public static void runPrompt() throws IOException {
@@ -55,7 +59,7 @@ public class Lang {
 
         // Stop if there was a syntax error.
         if (hadError) return;
-        System.out.println(new AstPrinter().print(expression));
+        interpreter.interpret(expression);
     }
 
     static void error ( int line, String message){
@@ -73,6 +77,12 @@ public class Lang {
         } else {
             report(token.line, " at '" + token.lexeme + "'", message);
         }
+    }
+
+    static void runtimeError(RuntimeError error) {
+        System.err.println(error.getMessage() +
+                "\n[line " + error.token.line + "]");
+        hadRuntimeError = true;
     }
 
 
