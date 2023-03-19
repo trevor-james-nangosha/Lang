@@ -84,7 +84,14 @@ public class Scanner {
                 if (isNextCharMatch('/')) {
                     // A comment goes until the end of the line.
                     while (peek() != '\n' && !isEOF()) advance();
-                } else {
+                } else if (isNextCharMatch('*')){
+                    if (isNextCharMatch('/') || isEOF()){
+                        Lang.error(line, "This is not a valid comment.");
+                    } else{
+                        while (peek() != '\n' && !isEOF() && peekBefore() != '/') advance();
+                    }
+                }
+                else {
                     addToken(SLASH);
                 }
                 break;
@@ -145,8 +152,14 @@ public class Scanner {
     }
 
     private char peekNext() {
+        // this also looks at the char after current, but also does not consume it.
         if (current + 1 >= source.length()) return '\0';
         return source.charAt(current + 1);
+    }
+
+    private char peekBefore(){
+        if(current-1 <= 0) return '\0';
+        return source.charAt(current-1);
     }
 
     private void string() {
@@ -173,6 +186,7 @@ public class Scanner {
     }
 
     private char peek() {
+        // this looks at the current char but doesn't consume it.
         if (isEOF()) return '\0';
         return source.charAt(current);
     }
@@ -201,6 +215,7 @@ public class Scanner {
         return source.charAt(current - 1);
     }
 
+    // add support for C-style /*  ... */ comment style
 
 
 }
