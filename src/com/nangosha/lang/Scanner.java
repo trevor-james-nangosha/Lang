@@ -215,7 +215,4 @@ public class Scanner {
         return source.charAt(current - 1);
     }
 
-    // add support for C-style /*  ... */ comment style
-
-
 }

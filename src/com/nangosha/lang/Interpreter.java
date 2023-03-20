@@ -68,8 +68,12 @@ public class Interpreter implements  Expr.Visitor<Object>{
                         "Operands must be two numbers or two strings.");
             case SLASH:
                 checkNumberOperands(expr.operator, left, right);
-                return (double)left / (double)right;
-            case STAR:
+                if( (double) right  == 0){
+                    throw new RuntimeError(expr.operator, "Division by zero is not supported.");
+                }else{
+                    return (double)left / (double)right;
+                }
+                case STAR:
                 checkNumberOperands(expr.operator, left, right);
                 return (double)left * (double)right;
             case BANG_EQUAL: return !isEqual(left, right);
