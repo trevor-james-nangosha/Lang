@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16002ead-74ca-43f5-b83e-be40b8d9b2ae" name="Changes" comment="Added support for concatenation between strings and integers/doubles.">
+    <list default="true" id="16002ead-74ca-43f5-b83e-be40b8d9b2ae" name="Changes" comment="Disabled division by zero.">
+      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Environment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/AstPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/AstPrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Expr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Scanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Lang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Lang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/tools/GenerateAst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/tools/GenerateAst.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +50,7 @@
     "settings.editor.selected.configurable": "copyright.filetypes.JAVA"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Lang">
+  <component name="RunManager" selected="Application.com.nangosha.tools.GenerateAst">
     <configuration name="AstPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nangosha.lang.AstPrinter" />
       <module name="Lang" />
@@ -113,9 +118,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.nangosha.tools.GenerateAst" />
         <item itemvalue="Application.Lang" />
         <item itemvalue="Application.AstPrinter" />
-        <item itemvalue="Application.com.nangosha.tools.GenerateAst" />
         <item itemvalue="Application.GenerateAst" />
         <item itemvalue="Application.Scanner" />
       </list>
@@ -193,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679234099246</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Disabled division by zero.">
+      <created>1679295615295</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679295615295</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,7 +229,8 @@
     <MESSAGE value="Added support for multi-line comments.&#10;&#10;These are comments in the form /* ... */. This is a challenge at the end of chapter 4." />
     <MESSAGE value="Added the interpreter class. &#10;&#10;We can now do basic calculations using our simple programming language. What you have here is a simple calculator." />
     <MESSAGE value="Added support for concatenation between strings and integers/doubles." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added support for concatenation between strings and integers/doubles." />
+    <MESSAGE value="Disabled division by zero." />
+    <option name="LAST_COMMIT_MESSAGE" value="Disabled division by zero." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

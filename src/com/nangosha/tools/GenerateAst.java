@@ -13,11 +13,24 @@ public class GenerateAst {
         } else {
             outputDir = args[0];
         }
+
         defineAst(outputDir, "Expr", Arrays.asList(
+                "Assign : Token name, Expr value",
                 "Binary : Expr left, Token operator, Expr right",
                 "Grouping : Expr expression",
                 "Literal : Object value",
-                "Unary : Token operator, Expr right"
+                "Logical : Expr left, Token operator, Expr right",
+                "Unary : Token operator, Expr right",
+                "Variable : Token name"
+        ));
+
+        defineAst(outputDir, "Stmt", Arrays.asList(
+                "Block : List<Stmt> statements",
+                "Expression : Expr expression",
+                "If : Expr condition, Stmt thenBranch," + " Stmt elseBranch",
+                "Print : Expr expression",
+                "Var : Token name, Expr initializer",
+                "While : Expr condition, Stmt body"
         ));
     }
 
@@ -85,12 +98,3 @@ public class GenerateAst {
 
 
 }
-
-
-// when traversing(interpreting) the tree, we have a bunch of expressions and the interpreter needs to do
-// something different for each of those expressions. for example, the interpreter could
-//  do something different when it meets a binary operation versus when it meets a unary operation.
-// in a classical OOP approach, you could add the behavior directly to those expression classes.
-// in case you wanted to add a new class, it is easier since the methods you want can easily be put in a place
-// like an interface.
-
