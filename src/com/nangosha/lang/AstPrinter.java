@@ -10,6 +10,12 @@ public class AstPrinter implements  Expr.Visitor<String> {
         return parenthesize(expr.operator.lexeme,
                 expr.left, expr.right);
     }
+
+    @Override
+    public String visitCallExpr(Expr.Call expr) {
+        return null;
+    }
+
     @Override
     public String visitGroupingExpr(Expr.Grouping expr) {
         return parenthesize("group", expr.expression);

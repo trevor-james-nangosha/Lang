@@ -4,14 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16002ead-74ca-43f5-b83e-be40b8d9b2ae" name="Changes" comment="Disabled division by zero.">
-      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Environment.java" afterDir="false" />
+    <list default="true" id="16002ead-74ca-43f5-b83e-be40b8d9b2ae" name="Changes" comment="This class forms the statement nodes of our AST.&#10;&#10;Just kept it seperate from the Expr. class., but they are all nodes in the same syntax tree.">
+      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/LangCallable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/LangFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Return.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/AstPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/AstPrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Expr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Lang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Lang.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Stmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Stmt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nangosha/tools/GenerateAst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/tools/GenerateAst.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +207,28 @@
       <option name="project" value="LOCAL" />
       <updated>1679295615295</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added a variable namespace.&#10;&#10;Our program can now remember variables. We also have scope.">
+      <created>1679306778764</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679306778764</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added support for logical statements, loops, variable declarations and printing.&#10;&#10;Our program is slowly gaining shape.">
+      <created>1679306944613</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679306944613</updated>
+    </task>
+    <task id="LOCAL-00013" summary="This class forms the statement nodes of our AST.&#10;&#10;Just kept it seperate from the Expr. class., but they are all nodes in the same syntax tree.">
+      <created>1679307041176</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679307041176</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,7 +253,10 @@
     <MESSAGE value="Added the interpreter class. &#10;&#10;We can now do basic calculations using our simple programming language. What you have here is a simple calculator." />
     <MESSAGE value="Added support for concatenation between strings and integers/doubles." />
     <MESSAGE value="Disabled division by zero." />
-    <option name="LAST_COMMIT_MESSAGE" value="Disabled division by zero." />
+    <MESSAGE value="Added a variable namespace.&#10;&#10;Our program can now remember variables. We also have scope." />
+    <MESSAGE value="Added support for logical statements, loops, variable declarations and printing.&#10;&#10;Our program is slowly gaining shape." />
+    <MESSAGE value="This class forms the statement nodes of our AST.&#10;&#10;Just kept it seperate from the Expr. class., but they are all nodes in the same syntax tree." />
+    <option name="LAST_COMMIT_MESSAGE" value="This class forms the statement nodes of our AST.&#10;&#10;Just kept it seperate from the Expr. class., but they are all nodes in the same syntax tree." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
