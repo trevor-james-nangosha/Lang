@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16002ead-74ca-43f5-b83e-be40b8d9b2ae" name="Changes" comment="Added functions and return statements to Lang.&#10;&#10;Also got to define a native clock() function for Lang, that will be called by clients in order to get time.">
-      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Resolver.java" afterDir="false" />
+    <list default="true" id="16002ead-74ca-43f5-b83e-be40b8d9b2ae" name="Changes" comment="Added support for resolving variables and statements.">
+      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/LangClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nangosha/lang/LangInstance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/AstPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/AstPrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Environment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Expr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Interpreter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Lang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Lang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/LangFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/LangFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Resolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Resolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Stmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Stmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/tools/GenerateAst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/tools/GenerateAst.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +55,11 @@
     "settings.editor.selected.configurable": "copyright.filetypes.JAVA"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Desktop\nangosha\crafting-interpreters\Lang" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Lang">
     <configuration name="AstPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nangosha.lang.AstPrinter" />
@@ -77,6 +90,7 @@
     <configuration name="Lang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nangosha.lang.Lang" />
       <module name="Lang" />
+      <option name="PROGRAM_PARAMETERS" value="file.lang" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.nangosha.lang.*" />
@@ -230,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679310408133</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added support for resolving variables and statements.">
+      <created>1679381072576</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1679381072576</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,7 +280,8 @@
     <MESSAGE value="Added support for logical statements, loops, variable declarations and printing.&#10;&#10;Our program is slowly gaining shape." />
     <MESSAGE value="This class forms the statement nodes of our AST.&#10;&#10;Just kept it seperate from the Expr. class., but they are all nodes in the same syntax tree." />
     <MESSAGE value="Added functions and return statements to Lang.&#10;&#10;Also got to define a native clock() function for Lang, that will be called by clients in order to get time." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added functions and return statements to Lang.&#10;&#10;Also got to define a native clock() function for Lang, that will be called by clients in order to get time." />
+    <MESSAGE value="Added support for resolving variables and statements." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added support for resolving variables and statements." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

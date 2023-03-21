@@ -11,6 +11,12 @@ public class LangFunction implements  LangCallable{
         this.closure = closure;
     }
 
+    LangFunction bind(LangInstance instance) {
+        Environment environment = new Environment(closure);
+        environment.define("this", instance);
+        return new LangFunction(declaration, environment);
+    }
+
     @Override
     public Object call(Interpreter interpreter, List<Object> arguments) {
         Environment environment = new Environment(closure);
