@@ -5,10 +5,12 @@ import java.util.Map;
 
 public class LangClass implements  LangCallable{
     final String name;
+    final LangClass superclass;
     private final Map<String, LangFunction> methods;
 
-    LangClass(String name, Map<String, LangFunction> methods) {
+    LangClass(String name, LangClass superclass, Map<String, LangFunction> methods) {
         this.name = name;
+        this.superclass = superclass;
         this.methods = methods;
     }
 
@@ -16,6 +18,11 @@ public class LangClass implements  LangCallable{
         if (methods.containsKey(name)) {
             return methods.get(name);
         }
+
+        if (superclass != null) {
+            return superclass.findMethod(name);
+        }
+
         return null;
     }
 

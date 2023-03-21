@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16002ead-74ca-43f5-b83e-be40b8d9b2ae" name="Changes" comment="Added support for classes. &#10;&#10;These classes can have properties, methods and can also make use of the &quot;this&quot; keyword. We also allow setting properties on those classes and getting them. Functions and instance methods are also bound to a specific instance.">
+    <list default="true" id="16002ead-74ca-43f5-b83e-be40b8d9b2ae" name="Changes" comment="Added constructors to the language, using the init() method.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Expr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Expr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Interpreter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/LangClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/LangClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/LangFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/LangFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Resolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Resolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/lang/Stmt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/lang/Stmt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nangosha/tools/GenerateAst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/nangosha/tools/GenerateAst.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +55,7 @@
       <recent name="C:\Users\HP\Desktop\nangosha\crafting-interpreters\Lang" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lang">
+  <component name="RunManager" selected="Application.com.nangosha.tools.GenerateAst">
     <configuration name="AstPrinter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nangosha.lang.AstPrinter" />
       <module name="Lang" />
@@ -121,8 +124,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lang" />
         <item itemvalue="Application.com.nangosha.tools.GenerateAst" />
+        <item itemvalue="Application.Lang" />
         <item itemvalue="Application.AstPrinter" />
         <item itemvalue="Application.GenerateAst" />
         <item itemvalue="Application.Scanner" />
@@ -250,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679385332676</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added constructors to the language, using the init() method.">
+      <created>1679386020009</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1679386020009</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,7 +291,8 @@
     <MESSAGE value="Added functions and return statements to Lang.&#10;&#10;Also got to define a native clock() function for Lang, that will be called by clients in order to get time." />
     <MESSAGE value="Added support for resolving variables and statements." />
     <MESSAGE value="Added support for classes. &#10;&#10;These classes can have properties, methods and can also make use of the &quot;this&quot; keyword. We also allow setting properties on those classes and getting them. Functions and instance methods are also bound to a specific instance." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added support for classes. &#10;&#10;These classes can have properties, methods and can also make use of the &quot;this&quot; keyword. We also allow setting properties on those classes and getting them. Functions and instance methods are also bound to a specific instance." />
+    <MESSAGE value="Added constructors to the language, using the init() method." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added constructors to the language, using the init() method." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
