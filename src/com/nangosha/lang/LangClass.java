@@ -28,11 +28,18 @@ public class LangClass implements  LangCallable{
     public Object call(Interpreter interpreter,
                        List<Object> arguments) {
         LangInstance instance = new LangInstance(this);
+        LangFunction initializer = findMethod("init");
+
+        if (initializer != null) {
+            initializer.bind(instance).call(interpreter, arguments);
+        }
         return instance;
     }
     @Override
     public int arity() {
-        return 0;
+        LangFunction initializer = findMethod("init");
+        if (initializer == null) return 0;
+        return initializer.arity();
     }
 
 }
